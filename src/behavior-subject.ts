@@ -1,4 +1,4 @@
-import { Observable } from 'core-js/features/observable';
+import Observable from 'core-js/features/observable';
 
 export class BehaviorSubject<T> {
   private observers: Array<(value: T) => void> = [];
