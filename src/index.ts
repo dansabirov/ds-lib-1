@@ -1,2 +1,2 @@
 export { TasksStore } from './store.interface';
-export * as storeService from './store.service';
+export { default as storeService } from './store.service';
