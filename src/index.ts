@@ -1,1 +1,1 @@
-export {sayHello, sayGoodbye} from './store';
+export { getState, setState} from './store';
