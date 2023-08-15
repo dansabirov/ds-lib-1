@@ -1,4 +1,4 @@
-import { Observable } from 'core-js/features/observable';
+import Observable from 'core-js/features/observable';
 
 import { TasksStore } from './store.interface';
 import { BehaviorSubject } from './behavior-subject';
