@@ -1,1 +1,1 @@
-export { getState, setState, State } from './store';
+export { TasksStore, TaskService } from './store';
