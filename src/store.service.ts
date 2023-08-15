@@ -1,4 +1,4 @@
-import Observable from 'core-js/features/observable';
+import { Observable } from 'core-js/features/observable';
 
 import { TasksStore } from './store.interface';
 import { BehaviorSubject } from './behavior-subject';
@@ -13,7 +13,7 @@ class TaskService {
     body: null,
   });
 
-  listenStore(): Observable<TasksStore> {
+  listenStore(): Observable {
     return this.store$.asObservable();
   }
 

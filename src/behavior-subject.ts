@@ -1,11 +1,11 @@
-import Observable from 'core-js/features/observable';
+import Observable from "core-js/features/observable";
 
 export class BehaviorSubject<T> {
   private observers: Array<(value: T) => void> = [];
   constructor(private _value: T) {}
 
-  asObservable(): Observable<T> {
-    return new Observable<T>(subscriber => {
+  asObservable(): Observable {
+    return new Observable(subscriber => {
       subscriber.next(this._value);
       const observer = (value: T) => subscriber.next(value);
       this.observers.push(observer);

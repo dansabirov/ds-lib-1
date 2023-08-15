@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2015",
+    "target": "es2020",
+    "module": "es2020",
     "declaration": true,
+    "moduleResolution": "node",
     "outDir": "./dist"
   },
   "include": [
